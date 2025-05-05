@@ -1,0 +1,505 @@
+
+@media print{
+  #print{
+    display: inline;
+    font-size: 50px;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    body {
+      background-image: url(Image/maxresdefault.jpg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 50%;
+    }
+  
+    #outer-box {
+      width: 90%;
+      max-width: 340px;
+      height: auto;
+      padding: 20px;
+      margin-left: 5%;
+      border-radius: 12px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(25px);
+      box-sizing: border-box;
+      transform: none;
+      position: fixed;
+      top: 20%;
+      left: 5%;
+    }
+  
+    #Login-text {
+      font-size: 32px;
+    }
+  
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    #user-icon,
+    #lock-icon {
+      /* display: none; optional: hide on small screens */
+     padding-top: 18px;
+    }
+  
+    h4 {
+        font-size: 12px;
+        padding-right: 20px; /* Adjusted padding */
+        position: relative;
+        top: 60%;
+      }
+      
+  
+    span {
+      font-size: 13px;
+      padding-left: 0;
+      text-align: center;
+      display: block;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 10px; /* Adds space between the checkbox and the label */
+      }
+
+
+
+      /* check-box */
+.container {
+    position: relative;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+  }
+  .checkmark {
+    width: 0.9em;
+    height: 0.9em;
+    background: #ccc;
+    border-radius: 4px;
+    transition: 0.2s;
+    position: absolute;
+    top: 5px; /* moved 2px lower */
+    left: -18px;
+  }
+  
+  input:checked + .checkmark {
+    background: linear-gradient(45deg, #643ddb, #d915ef);
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    left: 0.3em;
+    top: 0.15em;
+    width: 0.18em;
+    height: 0.35em;
+    border: solid #fff;
+    border-width: 0 0.12em 0.12em 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: 0.2s;
+  }
+  input:checked + .checkmark:after {
+    opacity: 1;
+  }
+      
+
+
+
+
+  
+/* Submit */
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+    height: 40px;
+    width: 78%;
+    background-color: white;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(75, 20, 126);
+    transition: all 0.1s ease;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+input[type="submit"]:hover {
+    animation-name: button_hover;
+    animation-duration: 0.34s;
+    background-color: transparent;
+    color: white;
+}
+
+input[type="submit"]:active {
+    transform: scale(1.05); /* scales up from center */
+    font-weight: 600;
+}
+
+
+
+#Forgot-password {
+    position: absolute; /* or fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: white;
+  }
+  
+  
+  
+  
+
+  }
+  
+  
+  
+  
+
+
+@font-face {
+    font-family: Google-font;
+    src: url(Fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+
+@keyframes button_hover{
+
+    from {
+        background-color: white;
+        color: rgb(75, 20, 126);
+    }
+
+    to {
+        background-color: transparent;
+        color: white;
+    }
+       
+}
+
+html{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+body{
+    background-image: url(Image/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+
+#outer-box{
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.329);
+    background-color: transparent;
+    height: 450px;
+    width: 450px;
+    position: fixed;
+    border-radius: 11.2px;
+    backdrop-filter: blur(25px);
+    margin-top: 10%;
+}
+
+
+
+#Login-text{
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: Google-font;
+    font-weight: 800;
+}
+
+
+
+#space{
+    height: 28.8px;
+    /* border: 1px solid red; */
+}
+
+
+/* #username-input-box{
+    display: flex;
+    justify-content: center;
+} */
+
+
+
+
+input[type="text"]{
+    border-radius: 25px;
+    height: 40px;
+    margin-left: 10%;
+    width: 75%;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.329);
+    color: white;
+    font-weight: 300;
+}
+
+
+input::placeholder {
+    color: white;
+    font-size: 15px;
+    color: white;
+    font-family: Google-font;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 20px;
+    
+  }
+
+
+  input:focus {
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+    font-size: 15px;
+    color: white;
+    font-family: Google-font;
+    font-weight: 500;
+    text-align: left;
+    padding-left: -20px;
+    max-width: 340px;
+  }
+  
+
+
+  #user-icon{
+    height: 22px;
+    width: auto;
+    position: absolute;
+    top: 155px;
+    right: 73px;
+    backdrop-filter: brightness(100%);
+  }
+
+
+
+
+  #lock-icon{
+    height: 22px;
+    width: auto;
+    position: absolute;
+    top: 230px;
+    right: 73px;
+  }
+
+
+
+  input[type="password"]{
+    border-radius: 25px;
+    height: 40px;
+    margin-left: 10%;
+    width: 75%;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.329);
+    color: white;
+    font-weight: 300;
+}
+
+
+
+#checkbox{
+    position: absolute;
+    bottom: 150px;
+    left: 40px;
+}
+
+
+
+
+h4{
+    color: white;
+    position: absolute;
+    left: 63.8px;
+    bottom: 128px;
+}
+
+
+
+#Forgot-password{
+    color: white;
+    position: absolute;
+    left: 260px;
+    font-family: Google-font;
+    font-weight: 600;
+    font-size: 15px;
+    top: 267px;
+}
+
+/* button {
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+    height: 40px;
+    width: 78%;
+    background-color: white;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(75, 20, 126);
+    transition: all 0.1s ease;
+} */
+
+
+
+
+
+span{
+    color: white;
+    text-align: center;
+    font-family: Google-font;
+    font-weight: 400;
+    padding-left: 108px;
+    padding-top: 100px;
+}
+
+
+/* 
+button:hover{
+    animation-name: button_hover;
+    animation-duration: 0.34s;
+    background-color: transparent;
+    color: white;
+}
+
+
+button:active {
+    transform: scale(1.05); /* scales up from center */
+    /* font-weight: 600;
+} */ */
+
+main{
+    padding: 25px;
+}
+
+
+#hitbox{
+    border: 2px solid red;
+}
+
+
+/* Anker tag or a tag start from here */
+
+
+.register-link {
+    color: white;
+    font-family: Google-font;
+    font-size: 15px;
+  }
+
+.button-login{
+    text-decoration: none;
+}
+
+
+#don{
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically (if needed) */
+    text-align: center;
+}
+
+
+/* check-box */
+.container {
+    position: relative;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+  }
+  .checkmark {
+    width: 0.9em;
+    height: 0.9em;
+    background: #ccc;
+    border-radius: 4px;
+    transition: 0.2s;
+    position: absolute;
+    top: 3px;
+    left: -18px;
+  }
+  input:checked + .checkmark {
+    background: linear-gradient(45deg, #643ddb, #d915ef);
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    left: 0.3em;
+    top: 0.15em;
+    width: 0.18em;
+    height: 0.35em;
+    border: solid #fff;
+    border-width: 0 0.12em 0.12em 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: 0.2s;
+  }
+  input:checked + .checkmark:after {
+    opacity: 1;
+  }
+  
+
+/* Submit */
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+    height: 40px;
+    width: 78%;
+    background-color: white;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(75, 20, 126);
+    transition: all 0.1s ease;
+}
+
+input[type="submit"]:hover {
+    animation-name: button_hover;
+    animation-duration: 0.34s;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    transform: scale(1.05); /* scales up from center */
+    font-weight: 600;
+}
+
+#print{
+  display: none;
+}
