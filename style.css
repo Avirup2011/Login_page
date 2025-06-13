@@ -247,7 +247,7 @@ h4{
     color: white;
     position: absolute;
     left: 63.8px;
-    bottom: 102px;
+    bottom: 98px;
 }
 
 
@@ -411,3 +411,5 @@ input[type="submit"]:active {
 #print{
   display: none;
 }
+
+
